@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyish"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/calculations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="7dp"
+        android:layout_weight="1"
+        android:background="@color/greyish"
+        android:gravity="right|bottom"
+        android:text=""
+        android:textColor="@color/blue"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:background="@color/greyish"
+        android:gravity="right|bottom"
+        android:text=""
+        android:textColor="@color/resultgrey"
+        android:textSize="40sp" />
+
+    <GridLayout
+
+        android:id="@+id/gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="#000000"
+        android:columnCount="4"
+        android:rowCount="5">
+
+
+        <Button
+            android:id="@+id/butdel"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="⌫"
+            android:textColor="@color/whitetext"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/butleftparanthesis"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="("
+            android:textColor="@color/whitetext"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/butrightparanthesis"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text=")"
+            android:textColor="@color/whitetext"
+            android:textSize="35sp" />
+
+
+        <Button
+            android:id="@+id/butdivide"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="÷"
+            android:textColor="@color/whitetext"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/but7"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="7"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/but8"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="8"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/but9"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="9"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/butmultiply"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="×"
+            android:textColor="@color/whitetext"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/but4"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="4"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/but5"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="5"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/but6"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="6"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/butminus"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="-"
+            android:textColor="@color/whitetext"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/but1"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="1"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/but2"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="2"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/but3"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:layout_marginBottom="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="3"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/butplus"
+            android:layout_row="3"
+            android:layout_rowSpan="2"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="+"
+            android:textColor="@color/whitetext"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/butpoint"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="."
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/but0"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/butequals"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="@dimen/marginkey"
+            android:background="@color/whitetext"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="="
+            android:textColor="@color/blue"
+            android:textSize="30sp" />
+    </GridLayout>
+
+</LinearLayout>
